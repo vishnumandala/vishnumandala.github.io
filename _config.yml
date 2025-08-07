@@ -1,8 +1,8 @@
 ### Site Settings ###
 title               : Vishnu Mandala
 description         : >-
-                      Robotics Engineer | AI/ML Enthusiast |
-                      Graduate Student at University of Maryland, College Park
+                      Systems Integration Engineer at OTTO by Rockwell Automation | 
+                      Robotics and AI/ML Enthusiast
 baseurl             : ""            
 repository          : vishnumandala/vishnumandala.github.io     
 remote_theme        : yousinix/portfolYOU
