@@ -2,12 +2,12 @@
 - title: Systems Integration Engineer
   from: August 2025
   to: Present
-  description: "<strong>OTTO by Rockwell Automation</strong><br><strong>Location:</strong> Fort Wayne, Indiana<br><br>Systems integration and automation solutions for industrial robotics and autonomous mobile robots"
+  description: "<strong>OTTO by Rockwell Automation</strong><br><strong>Location:</strong> Fort Wayne, IN<br><br>Engineered AMR workflows, fleet maps, intervention logs, and site reports for ∼100 robots across two large-scale plant projects, addressing system design issues, optimizing fleet traffic management, and standardizing deployment documentation<br><br>Integrated AMRs with middleware (Nexia, GM systems) via REST APIs; debugged rosbag and RViz logs, analyzed visualizations, and escalated issues through Jira — improving travel time by 12% and cutting queuing by 20%<br><br>Commissioned deployments by authoring acceptance tests, validating middleware integrations, and building VRA test servers on AWS to trial workflow and system enhancements<br><br>Delivered Tier-3 support and structured training to ∼10 plant employees, combining technical documentation, troubleshooting workflows, and on-site validation to ensure reliable, long-term AMR operations"
 
 - title: Robotics Intern
   from: March 2025
-  to: August 2025
-  description: "<strong>RoBuildX Inc. (Remote)</strong><br><br>Developed parametric URDF/XACRO models for the Roofie wall-panel placer, integrated MoveIt2 pipelines, and achieved sub-10 mm placement accuracy in Gazebo simulations<br><br>Ported Gazebo sensor and actuator plugins to ROS2 and built automated test frameworks to validate trajectories, safety interlocks, and refine control parameters — cutting commissioning time by 30%<br><br>Designed an upper-rail–mounted gripper control and payload attachment kit for a purchased 500,kg AMR; integrated CANbus I/O, e-stop circuitry, and HIL tests, then fused LiDAR + IMU + AprilTag data with Nav2 planners for reliable dynamic navigation<br><br>Liaised with clients, project managers, and AMR vendors to scope deployments, customize platforms, and author quick-start and troubleshooting guides for Tier-3 support"
+  to: July 2025
+  description: "<strong>RoBuildX Inc. (Remote)</strong><br><br>Developed parametric URDF/XACRO models for the Roofie wall-panel placer, integrating MoveIt2 pipelines and achieving sub-10 mm placement accuracy in Gazebo<br><br>Migrated Gazebo sensor and actuator plugins to ROS2 and built automated test frameworks to validate trajectories and safety interlocks — reducing commissioning time by 30%<br><br>Designed upper-rail gripper controls and payload kits for a 500 kg AMR, fusing LiDAR, IMU, and AprilTag data with Nav2 planners for reliable dynamic navigation"
 
 - title: Graduate Teaching Assistant
   from: August 2023
