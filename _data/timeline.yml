@@ -1,7 +1,12 @@
 # Work Experience
+- title: Robotics Software Engineer
+  from: November 2025
+  to: Present
+  description: "<strong>Roboteon Inc.</strong><br><strong>Location:</strong> San Jose, CA<br>
+
 - title: Systems Integration Engineer
   from: August 2025
-  to: Present
+  to: November 2025
   description: "<strong>OTTO by Rockwell Automation</strong><br><strong>Location:</strong> Fort Wayne, IN<br><br>Engineered AMR workflows, fleet maps, intervention logs, and site reports for ∼100 robots across two large-scale plant projects, addressing system design issues, optimizing fleet traffic management, and standardizing deployment documentation<br><br>Integrated AMRs with middleware (Nexia, GM systems) via REST APIs; debugged rosbag and RViz logs, analyzed visualizations, and escalated issues through Jira — improving travel time by 12% and cutting queuing by 20%<br><br>Commissioned deployments by authoring acceptance tests, validating middleware integrations, and building VRA test servers on AWS to trial workflow and system enhancements<br><br>Delivered Tier-3 support and structured training to ∼10 plant employees, combining technical documentation, troubleshooting workflows, and on-site validation to ensure reliable, long-term AMR operations"
 
 - title: Robotics Intern
