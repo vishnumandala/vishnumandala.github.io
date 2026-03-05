@@ -1,6 +1,6 @@
 # Portfolio
 
-This repository contains the source code for my personal website, hosted on GitHub Pages at [https://vishnumandala.github.io](https://vishnumandala.github.io). The site is built with [Jekyll](https://jekyllrb.com/) and leverages the elegant **portfolYOU** theme to showcase my projects, experiences, and ideas in a clean, minimalist style.
+This repository contains the source code for my personal website, hosted on GitHub Pages at [https://vishnu-mandala.com](https://vishnu-mandala.com). The site is built with [Jekyll](https://jekyllrb.com/) and leverages the elegant **portfolYOU** theme to showcase my projects, experiences, and ideas in a clean, minimalist style.
 
 ## Theme
 
