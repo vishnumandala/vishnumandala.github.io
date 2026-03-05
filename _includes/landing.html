@@ -1,41 +1,35 @@
-<div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-6 col-md-8 text-center mt-5 mx-auto">
-    <!-- Centered & Responsive Avatar -->
-    <div class="d-flex justify-content-center">
-      <div class="avatar-container" style="width: 100%; max-width: 540px;">
-        {% if site.author.image %}
-          <img class="img-fluid rounded-circle shadow-lg mx-auto" src="profile.jpg" alt="{{ site.title }}" style="object-fit: cover;">
-        {% else %}
-          <img class="img-fluid rounded-circle shadow-lg mx-auto" src="https://ui-avatars.com/api/?name={{ site.title }}&background=random" alt="{{ site.title }}" style="object-fit: cover;">
-        {% endif %}
+<section class="hero-shell reveal">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker">Robotics Software Engineer</p>
+      <h1 class="hero-title">Designing autonomous systems that ship in the real world.</h1>
+      <p class="hero-subtitle">
+        I build perception, planning, and control software across startups and industrial fleets,
+        blending deep technical execution with production reliability.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary hero-btn" href="{{ '/Resume.pdf' | relative_url }}">Download Resume</a>
+        <a class="btn btn-outline-primary hero-btn" href="{{ '/projects/' | relative_url }}">Explore Projects</a>
       </div>
     </div>
 
-    <p class="text-muted wow animated slideInUp mt-4" data-wow-delay=".15s">
-      {{ site.description }}
-    </p>
-
-    <!-- Social Media Buttons -->
-    <div class="mt-4 d-flex justify-content-center wow animated slideInUp" data-wow-delay=".2s" style="gap: 2rem;">
-      <a class="btn btn-outline-dark btn-lg shadow-sm d-flex align-items-center resume wow animated slideInUp" data-wow-delay=".3s" href="Resume.pdf">
-        <i class="fas fa-file-pdf" style="margin-right: 8px;"></i>
-        <span>Resume</span>
-      </a>
-      <a class="btn btn-outline-dark btn-lg shadow-sm d-flex align-items-center github wow animated slideInUp" data-wow-delay=".4s" href="https://github.com/vishnumandala">
-        <i class="fab fa-github" style="margin-right: 8px;"></i>
-        <span>GitHub</span>
-      </a>
-      <a class="btn btn-outline-dark btn-lg shadow-sm d-flex align-items-center linkedin wow animated slideInUp" data-wow-delay=".5s" href="https://www.linkedin.com/in/vishnumandala">
-        <i class="fab fa-linkedin-in" style="margin-right: 8px;"></i>
-        <span>LinkedIn</span>
-      </a>
+    <div class="hero-visual">
+      <div class="avatar-shell">
+        {% if site.author.image %}
+          <img class="hero-avatar" src="{{ site.author.image | relative_url }}" alt="{{ site.author.name }}" />
+        {% else %}
+          <img class="hero-avatar" src="https://ui-avatars.com/api/?name={{ site.title }}&background=random" alt="{{ site.title }}" />
+        {% endif %}
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:{{ site.author.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Scroll Down Arrow -->
-<div class="text-center mt-4">
-  <div class="scroll-down" id="scrollArrow" onclick="scrollToAbout()">
+  <button class="scroll-down" id="scrollArrow" type="button" onclick="scrollToAbout()" aria-label="Scroll to about section">
     <i class="fas fa-chevron-down"></i>
-  </div>
-</div>
+  </button>
+</section>

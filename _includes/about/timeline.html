@@ -1,0 +1,17 @@
+<div class="timeline-cards">
+  {% for item in site.data.timeline %}
+    <article class="timeline-card reveal">
+      <div class="timeline-top">
+        <h3>{{ item.title }}</h3>
+        <p class="timeline-date">{{ item.from }} - {{ item.to }}</p>
+      </div>
+      {% if item.organization %}
+        <p class="timeline-org">{{ item.organization }}</p>
+      {% endif %}
+      {% if item.location %}
+        <p class="timeline-location">{{ item.location }}</p>
+      {% endif %}
+      <p class="timeline-desc">{{ item.description }}</p>
+    </article>
+  {% endfor %}
+</div>

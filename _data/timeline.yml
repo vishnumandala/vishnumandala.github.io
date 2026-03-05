@@ -1,35 +1,48 @@
-# Work Experience
 - title: Robotics Software Engineer
   from: November 2025
   to: Present
-  description: "<strong>Roboteon Inc.</strong><br><strong>Location:</strong> San Jose, CA"
+  organization: Roboteon Inc.
+  location: San Jose, CA
+  description: Building robotics software systems that unify perception, planning, control, and deployment reliability.
 
 - title: Systems Integration Engineer
   from: August 2025
   to: November 2025
-  description: "<strong>OTTO by Rockwell Automation</strong><br><strong>Location:</strong> Fort Wayne, IN<br><br>Engineered AMR workflows, fleet maps, intervention logs, and site reports for ∼100 robots across two large-scale plant projects, addressing system design issues, optimizing fleet traffic management, and standardizing deployment documentation<br><br>Integrated AMRs with middleware (Nexia, GM systems) via REST APIs; debugged rosbag and RViz logs, analyzed visualizations, and escalated issues through Jira — improving travel time by 12% and cutting queuing by 20%<br><br>Commissioned deployments by authoring acceptance tests, validating middleware integrations, and building VRA test servers on AWS to trial workflow and system enhancements<br><br>Delivered Tier-3 support and structured training to ∼10 plant employees, combining technical documentation, troubleshooting workflows, and on-site validation to ensure reliable, long-term AMR operations"
+  organization: OTTO by Rockwell Automation
+  location: Fort Wayne, IN
+  description: Engineered fleet maps, AMR workflows, and middleware integrations for two large industrial deployments with measurable throughput gains.
 
 - title: Robotics Intern
   from: March 2025
   to: July 2025
-  description: "<strong>RoBuildX Inc. (Remote)</strong><br><br>Developed parametric URDF/XACRO models for the Roofie wall-panel placer, integrating MoveIt2 pipelines and achieving sub-10 mm placement accuracy in Gazebo<br><br>Migrated Gazebo sensor and actuator plugins to ROS2 and built automated test frameworks to validate trajectories and safety interlocks — reducing commissioning time by 30%<br><br>Designed upper-rail gripper controls and payload kits for a 500 kg AMR, fusing LiDAR, IMU, and AprilTag data with Nav2 planners for reliable dynamic navigation"
+  organization: RoBuildX Inc.
+  location: Remote
+  description: Developed parametric robot models, MoveIt2 pipelines, and ROS2 migration frameworks that improved commissioning speed and placement precision.
 
 - title: Graduate Teaching Assistant
   from: August 2023
   to: December 2024
-  description: "<strong>Department of Mechanical Engineering, University of Maryland</strong><br><br>Delivered hands-on instruction in SolidWorks and Autodesk Inventor to over 600 students, improving design accuracy by 25% through advanced CAD lectures, targeted feedback, and collaboration with faculty on grading and assessments"
+  organization: Department of Mechanical Engineering, University of Maryland
+  location: College Park, MD
+  description: Delivered CAD labs and mentorship to 600+ students, improving design quality and practical engineering workflows.
 
 - title: Assistant Operations Manager
   from: June 2023
   to: December 2024
-  description: "<strong>Conferences and Visitor Services, University of Maryland</strong><br><br>Directed linen operations across 120+ programs, implementing a custom database to maintain 100% inventory tracking accuracy, achieve a 50% cost reduction, boost efficiency by 30%, and supervise a team of 25 members"
+  organization: Conferences and Visitor Services, University of Maryland
+  location: College Park, MD
+  description: Led operations and database-driven inventory workflows across 120+ programs while managing a 25-member team.
 
 - title: Master of Engineering in Robotics
   from: January 2023
   to: December 2024
-  description: "<strong>University of Maryland, College Park, MD</strong><br><strong>GPA:</strong> 3.91/4.0<br><br><strong>Coursework:</strong> Perception and Planning for Autonomous Robots, Robot Modeling and Controls, AI and Deep Learning, Reinforcement Learning, Manufacturing Robotic Systems, Rehabilitation Robotics"
+  organization: University of Maryland
+  location: College Park, MD
+  description: GPA 3.91/4.0. Coursework included autonomous robot planning, control, AI, deep learning, and manufacturing robotics.
 
 - title: Bachelor of Technology in Mechatronics
   from: July 2018
   to: July 2022
-  description: "<strong>Mahatma Gandhi Institute of Technology, India</strong><br><strong>GPA:</strong> 7.84/10<br><br><strong>Coursework:</strong> Kinematics and Dynamics of Machinery, Robotics and Automation, CAD/CAM, Finite Element Methods, Motion Control Design, Switching Theory and Logic Design, Microprocessors and Microcontrollers, Fundamentals of IoT, MEMS, Material Science, Automotive and Manufacturing Processes, Automobile Engineering, Operations Research"
+  organization: Mahatma Gandhi Institute of Technology
+  location: Hyderabad, India
+  description: GPA 7.84/10. Built foundations in robotics, automation, CAD/CAM, controls, and embedded systems.

@@ -1,0 +1,15 @@
+- label: AMRs supported in production deployments
+  value: "~100"
+  icon: fas fa-robot
+
+- label: Travel-time improvement in fleet workflows
+  value: "12%"
+  icon: fas fa-route
+
+- label: Queueing reduction through traffic optimization
+  value: "20%"
+  icon: fas fa-traffic-light
+
+- label: Students mentored in CAD and design
+  value: "600+"
+  icon: fas fa-chalkboard-teacher

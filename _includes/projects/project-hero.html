@@ -1,0 +1,55 @@
+<section class="project-hero reveal">
+  <a href="{{ '/projects/' | relative_url }}" class="project-back-link">
+    <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Projects
+  </a>
+
+  <div class="project-hero-top">
+    <div>
+      <p class="project-kicker">Case Study</p>
+      <h1>{{ page.name }}</h1>
+      {% if page.summary %}
+        <p class="project-summary">{{ page.summary }}</p>
+      {% endif %}
+    </div>
+    {% if page.github_url %}
+      <a class="btn btn-outline-primary project-github-btn" href="{{ page.github_url }}" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i> Repository
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="project-quickfacts">
+    {% if page.role %}
+      <div>
+        <span>Role</span>
+        <strong>{{ page.role }}</strong>
+      </div>
+    {% endif %}
+    {% if page.duration %}
+      <div>
+        <span>Duration</span>
+        <strong>{{ page.duration }}</strong>
+      </div>
+    {% endif %}
+    {% if page.impact %}
+      <div>
+        <span>Impact</span>
+        <strong>{{ page.impact }}</strong>
+      </div>
+    {% endif %}
+  </div>
+
+  {% if page.image %}
+    <div class="project-hero-media">
+      <img src="{{ page.image }}" alt="{{ page.name }} preview" loading="lazy" />
+    </div>
+  {% endif %}
+
+  {% if page.tools %}
+    <div class="project-tags">
+      {% for tag in page.tools %}
+        <span class="tag-chip">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
