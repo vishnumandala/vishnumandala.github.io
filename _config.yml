@@ -3,7 +3,8 @@ title               : Vishnu Mandala
 description         : >-
                       Robotics Software Engineer at Roboteon Inc. | 
                       Robotics and AI/ML Enthusiast
-baseurl             : ""            
+baseurl             : ""
+url                 : "https://vishnu-mandala.com"
 repository          : vishnumandala/vishnumandala.github.io     
 remote_theme        : yousinix/portfolYOU
 open_new_tab        : true                    
