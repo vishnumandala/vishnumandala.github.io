@@ -1,34 +1,55 @@
-<nav class="navbar navbar-expand-lg navbar-themed site-navbar">
-  <div class="container px-0">
-    <a class="navbar-brand brand-wordmark" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+<nav class="navbar navbar-expand-lg navbar-themed">
+<div class="container">
+  <a class="navbar-brand" href="{{ site.baseurl }}/"><h5><b>{{ site.title }}</b></h5></a>
 
-    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto align-items-lg-center">
-        <a class="nav-item nav-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
-        <a class="nav-item nav-link {% if page.url contains '/projects/' %}active{% endif %}" href="{{ '/projects/' | relative_url }}">Projects</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      {% assign pages = site.html_pages | sort: 'weight' %}
+      {% for p in pages %}
+        {% unless p.path == 'index.html' or p.name == '404.html' or p.name == 'blog.html' or p.path contains 'pages/tags' %}
+          {% if p.external_url %}
+            <a class="nav-item nav-link" href="{{ p.external_url }}" target="_blank">
+              {{ p.title }}
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          {% else %}
+            {% if p.url == '/about/' and page.url == '/' %}
+              <!-- When on home page, link the About nav item to the #about anchor -->
+              <a class="nav-item nav-link" href="javascript:void(0);" onclick="scrollToAbout()">{{ p.title }}</a>
+            {% else %}
+              <a class="nav-item nav-link {% if page.url == p.url %}active{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
 
-        {% if page.url == '/' %}
-          <button class="nav-item nav-link nav-anchor-btn" type="button" onclick="scrollToAbout()">About</button>
-        {% else %}
-          <a class="nav-item nav-link {% if page.url == '/about/' %}active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
-        {% endif %}
+      <!-- Social Links -->
+      <div class="navbar-nav">
+        {% unless page.url == '/' %}
+          <span class="nav-item">
+            <a class="nav-link" href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </span>
+          <span class="nav-item">
+            <a class="nav-link" href="https://github.com/{{ site.author.github }}" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </span>
+        {% endunless %}
 
-        <div class="nav-divider d-none d-lg-block" aria-hidden="true"></div>
-
-        <a class="nav-item nav-link nav-icon" href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a class="nav-item nav-link nav-icon" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <button class="nav-item nav-link nav-icon btn btn-link p-0" id="theme-toggle" type="button" aria-label="Toggle theme">
-          <i class="fas fa-moon" id="theme-icon"></i>
-        </button>
+        <!-- Dark Mode Toggle (Always Visible) -->
+        <span class="nav-item">
+          <a class="nav-link" id="theme-toggle" href="#">
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </a>
+        </span>
       </div>
     </div>
   </div>
+</div>
 </nav>

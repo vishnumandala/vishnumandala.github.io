@@ -87,7 +87,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "project-case"
+      layout: "page"
 
 
 ### Exclude from processing ###

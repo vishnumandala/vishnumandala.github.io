@@ -1,22 +1,27 @@
-<section id="featured-projects" class="featured-projects-section reveal">
-  <div class="section-heading-wrap">
-    <p class="section-kicker">Selected Work</p>
-    <h2 class="section-title">Featured Projects</h2>
-    <p class="section-subtitle">A cross-section of autonomy, AI, and controls projects with measurable outcomes.</p>
+<div id="featured-projects">
+    <div class="m-3 wow animated slideInUp" data-wow-delay="0.15s">
+      <br /><br /><br />
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="card-columns m-3 mt-4">
+      {% for project in site.projects %}
+        {% if project.name contains 'RC-NFQ' or project.name contains 'ARIAC' or project.name contains 'RRT*' %}
+          {% assign project_type = "local" %}
+          {% assign project_id = project.name | slugify %}
+          {% assign project_img = project.image %}
+          {% assign project_name = project.name %}
+          {% assign project_desc = project.description %}
+          {% assign project_tools = project.tools %}
+          {% if project.external_url %}
+            {% assign project_url = project.external_url %}
+          {% else %}
+            {% assign project_url = project.url | relative_url %}
+          {% endif %}
+          {% include projects/project-card.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="text-center">
+      {% include elements/button.html link="/projects" text="View all" %}
+    </p>
   </div>
-
-  <div class="project-grid">
-    {% assign featured = site.projects | where: 'featured', true %}
-    {% if featured.size == 0 %}
-      {% assign featured = site.projects | slice: 0, 3 %}
-    {% endif %}
-
-    {% for project in featured %}
-      {% include projects/project-card.html project=project %}
-    {% endfor %}
-  </div>
-
-  <p class="text-center mt-4">
-    <a class="btn btn-outline-primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
-  </p>
-</section>
