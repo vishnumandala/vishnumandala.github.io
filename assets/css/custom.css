@@ -1010,3 +1010,53 @@ small[id="attribution"] {
 .carousel-indicators .active {
     background-color: #29d6cd !important; /* Cyan color for active dot */
 }
+
+/* ==========================================================================
+   Project Card Glassmorphism & Modern Styling
+   ========================================================================== */
+
+/* Dark Mode Basis */
+.project.card.glass-card {
+  background: rgba(40, 42, 54, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] .project.card.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover States */
+.project.card.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(41, 214, 205, 0.3);
+  box-shadow: 0 20px 40px rgba(3, 161, 224, 0.15);
+}
+
+[data-theme="light"] .project.card.glass-card:hover {
+  box-shadow: 0 20px 40px rgba(3, 161, 224, 0.2);
+}
+
+/* Image Zoom Effect */
+.project-img-zoom {
+  transition: transform 0.5s ease;
+}
+.project.card.glass-card:hover .project-img-zoom {
+  transform: scale(1.08); /* slight zoom on hover */
+}
+
+/* Read More Text Hover Arrow Slide */
+.glass-card .fa-arrow-right {
+  transition: transform 0.3s ease;
+}
+.glass-card:hover .fa-arrow-right {
+  transform: translateX(5px);
+}
+
