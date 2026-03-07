@@ -1060,3 +1060,18 @@ small[id="attribution"] {
   transform: translateX(5px);
 }
 
+/* ==========================================================================
+   Solid Social Media Buttons Override
+   ========================================================================== */
+.btn-outline-dark.resume, .btn-outline-dark.resume i,
+.btn-outline-dark.github, .btn-outline-dark.github i,
+.btn-outline-dark.linkedin, .btn-outline-dark.linkedin i {
+  color: white !important;
+  border-color: transparent !important;
+}
+.btn-outline-dark.resume::before,
+.btn-outline-dark.github::before,
+.btn-outline-dark.linkedin::before {
+  transform: scaleX(1) !important;
+}
+

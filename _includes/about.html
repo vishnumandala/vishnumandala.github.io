@@ -16,6 +16,14 @@
 {% endif %}
 
 
+{% if page.url == '/about/' %}
+<h1>Tech Stack Usage Across Projects</h1>
+<div class="row">
+    {% include about/skills.html title="" source=site.data.programming-skills %}
+    {% include about/skills.html title="" source=site.data.ai-ml-skills %}
+</div>
+{% endif %}
+
 <div class="tech-section">
     <div class="tech-category wow animated slideInUp" data-wow-delay="0.1s">
         <h2>Programming Languages</h2>

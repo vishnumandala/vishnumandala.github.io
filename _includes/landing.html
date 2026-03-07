@@ -1,8 +1,5 @@
-<div class="row justify-content-center align-items-center p-4" style="position: relative; overflow: hidden; min-height: 80vh;" id="home-hero">
-  <!-- Particle container -->
-  <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0; pointer-events: none;"></div>
-  
-  <div class="col-lg-6 col-md-8 text-center mt-5 mx-auto" style="position: relative; z-index: 1;">
+<div class="row justify-content-center align-items-center p-4">
+  <div class="col-lg-6 col-md-8 text-center mt-5 mx-auto">
     <!-- Centered & Responsive Avatar -->
     <div class="d-flex justify-content-center">
       <div class="avatar-container" style="width: 100%; max-width: 540px;">
@@ -44,27 +41,3 @@
     <i class="fas fa-chevron-down"></i>
   </div>
 </div>
-
-<!-- tsParticles Library -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  tsParticles.load("particles-js", {
-    preset: "links",
-    particles: {
-      number: { value: 60, density: { enable: true, value_area: 800 } },
-      color: { value: ["#03a1e0", "#00ffdd"] },
-      links: { enable: true, color: "#29d6cd", opacity: 0.3, distance: 150 },
-      move: { enable: true, speed: 1.5 },
-      size: { value: 3 }
-    },
-    background: {
-      color: "transparent"
-    },
-    interactivity: {
-      events: { onHover: { enable: true, mode: "grab" } },
-      modes: { grab: { distance: 140, links: { opacity: 0.5 } } }
-    }
-  });
-});
-</script>
