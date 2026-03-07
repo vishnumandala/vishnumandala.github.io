@@ -3,47 +3,10 @@ name: MyDerma - Mobile Deep Learning for Skin Cancer Detection
 tools: [TensorFlow Lite, ResNet-50, InceptionV3, DenseNet201, Flutter]
 image: https://raw.githubusercontent.com/vishnumandala/MyDerma-Mobile-Deep-Learning-for-Real-Time-Skin-Cancer-Detection/main/results/demo.gif
 description: Mobile application using ensemble deep learning models for real-time skin cancer detection with 97.15% accuracy.
+github_url: https://github.com/vishnumandala/MyDerma-Mobile-Deep-Learning-for-Real-Time-Skin-Cancer-Detection
 ---
 
-<a href="{{ site.baseurl }}/projects/" class="back-button" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: inherit;">
-    <i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back to Projects
-</a>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-    <h1 style="margin: 0;"><strong>MyDerma - Mobile Deep Learning for Skin Cancer Detection</strong></h1>
-    <a href="https://github.com/vishnumandala/MyDerma-Mobile-Deep-Learning-for-Real-Time-Skin-Cancer-Detection" 
-        class="github-link"
-       style="text-decoration: none; background-color: #f5f5f5; padding: 10px 15px; border-radius: 8px; transition: all 0.3s ease;">
-        <i class="fab fa-github fa-2x" style="color: #333333; transition: color 0.3s ease;"></i>
-        <style>
-            a:hover {
-                background-color: #333333 !important;
-            }
-            .github-link:hover i {
-                color: #ffffff !important;
-            }
-            .back-button:hover {
-                background-color: transparent !important;
-            }
-        </style>
-    </a>
-</div>
-
-<p class="post-metadata text-muted">
-   <span class="d-inline-block">December 15, 2023</span> &#8226; 
-   <span class="tags">
-      {% for tag in page.tools %}
-      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
-      {% endfor %}
-    </span>
-</p>
-
-<div style="text-align: center; margin: 30px 0;">
-    <img src="https://raw.githubusercontent.com/vishnumandala/MyDerma-Mobile-Deep-Learning-for-Real-Time-Skin-Cancer-Detection/main/results/demo.gif" 
-         alt="MyDerma App Demo"
-         style="width: 90%; max-width: 1200px; margin: auto;"
-    />
-</div>
 
 ## Project Overview
 MyDerma is a mobile application designed to deliver early, accurate skin cancer detection through a hybrid deep learning approach. By leveraging an ensemble of state-of-the-art Convolutional Neural Networks (CNNs) – namely InceptionV3, DenseNet201, MobileNetV2, and ResNet50 – the system analyzes dermatoscopic images from the HAM10000 dataset. The project not only aims to achieve high classification accuracy (with ensemble test accuracy reaching **97.15%** and validation accuracy up to **98.46%**) but also to provide a non-invasive diagnostic tool accessible via mobile devices.

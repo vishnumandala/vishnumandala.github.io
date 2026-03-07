@@ -3,47 +3,10 @@ name: Obstacle Recognition and Autonomous Navigation System
 tools: [SLAM, YOLOv8, OpenCV, Raspberry Pi, Embedded Control]
 image: https://raw.githubusercontent.com/vishnumandala/Obstacle-Detection-and-Recognition-System-using-Customized-YOLO-Algorithm-for-a-Mobile-Robot/main/results/demo.gif
 description: Autonomous differential drive robot with real-time pick-and-place capabilities, achieving 92% detection accuracy using multi-sensor fusion.
+github_url: https://github.com/vishnumandala/Obstacle-Detection-and-Recognition-System-using-Customized-YOLO-Algorithm-for-a-Mobile-Robot
 ---
 
-<a href="{{ site.baseurl }}/projects/" class="back-button" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: inherit;">
-    <i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back to Projects
-</a>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-    <h1 style="margin: 0;"><strong>Obstacle Recognition and Autonomous Navigation System</strong></h1>
-    <a href="https://github.com/vishnumandala/Obstacle-Detection-and-Recognition-System-using-Customized-YOLO-Algorithm-for-a-Mobile-Robot" 
-        class="github-link"
-       style="text-decoration: none; background-color: #f5f5f5; padding: 10px 15px; border-radius: 8px; transition: all 0.3s ease;">
-        <i class="fab fa-github fa-2x" style="color: #333333; transition: color 0.3s ease;"></i>
-        <style>
-            a:hover {
-                background-color: #333333 !important;
-            }
-            .github-link:hover i {
-                color: #ffffff !important;
-            }
-            .back-button:hover {
-                background-color: transparent !important;
-            }
-        </style>
-    </a>
-</div>
-
-<p class="post-metadata text-muted">
-   <span class="d-inline-block">May 25, 2023</span> &#8226; 
-   <span class="tags">
-      {% for tag in page.tools %}
-      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
-      {% endfor %}
-    </span>
-</p>
-
-<div style="text-align: center; margin: 30px 0;">
-    <img src="https://raw.githubusercontent.com/vishnumandala/Obstacle-Detection-and-Recognition-System-using-Customized-YOLO-Algorithm-for-a-Mobile-Robot/main/results/demo.gif" 
-         alt="Obstacle Recognition Demo"
-         style="width: 90%; max-width: 1200px; margin: auto;"
-    />
-</div>
 
 ## Project Overview
 

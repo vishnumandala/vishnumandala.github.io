@@ -3,47 +3,10 @@ name: Improved Bi-directional RRT* for Robot Path Planning
 tools: [ROS, Turtlebot3, Gazebo, A*, APF, Dynamic Window, Sensor Fusion]
 image: https://raw.githubusercontent.com/vishnumandala/Improved-Bi-directional-RRT-Algorithm-for-Robot-Path-Planning-/main/results/demo.gif
 description: Enhanced Bi-Directional RRT* with Artificial Potential Field for efficient path planning in complex, dynamic environments.
+github_url: https://github.com/vishnumandala/Improved-Bi-directional-RRT-Algorithm-for-Robot-Path-Planning-
 ---
 
-<a href="{{ site.baseurl }}/projects/" class="back-button" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: inherit;">
-    <i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back to Projects
-</a>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-    <h1 style="margin: 0;"><strong>Improved Bi-directional RRT* for Robot Path Planning</strong></h1>
-    <a href="https://github.com/vishnumandala/Improved-Bi-directional-RRT-Algorithm-for-Robot-Path-Planning-" 
-        class="github-link"
-       style="text-decoration: none; background-color: #f5f5f5; padding: 10px 15px; border-radius: 8px; transition: all 0.3s ease;">
-        <i class="fab fa-github fa-2x" style="color: #333333; transition: color 0.3s ease;"></i>
-        <style>
-            a:hover {
-                background-color: #333333 !important;
-            }
-            .github-link:hover i {
-                color: #ffffff !important;
-            }
-            .back-button:hover {
-                background-color: transparent !important;
-            }
-        </style>
-    </a>
-</div>
-
-<p class="post-metadata text-muted">
-   <span class="d-inline-block">April 10, 2023</span> &#8226; 
-   <span class="tags">
-      {% for tag in page.tools %}
-      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
-      {% endfor %}
-    </span>
-</p>
-
-<div style="text-align: center; margin: 30px 0;">
-    <img src="https://raw.githubusercontent.com/vishnumandala/Improved-Bi-directional-RRT-Algorithm-for-Robot-Path-Planning-/main/results/demo.gif" 
-         alt="RRT* Path Planning Demo"
-         style="width: 90%; max-width: 1200px; margin: auto;"
-    />
-</div>
 
 ## Project Overview
 

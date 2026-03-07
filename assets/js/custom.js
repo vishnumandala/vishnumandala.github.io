@@ -175,7 +175,33 @@ function scrollToAbout() {
     // Set scroll arrow color
     setScrollArrowColor(descriptionText, scrollArrow);
   
-    // Avatar hover effects
-    initAvatarHoverEffects(avatar);
+
+  // --- Page Transitions ---
+  // Intercept all internal links and apply the fade-out class before navigating
+  const links = document.querySelectorAll('a[href]');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const target = this.getAttribute('href');
+
+      // Check if it's an internal link (basic check: starts with / or is a relative path, and isn't just a hash)
+      // We also ignore links that open in a new tab
+      if (
+        this.target !== '_blank' &&
+        !target.startsWith('http') &&
+        !target.startsWith('mailto:') &&
+        !target.startsWith('#')
+      ) {
+        e.preventDefault(); // Stop immediate navigation
+        
+        // Add the fade-out class to the body
+        document.body.classList.add('fade-out');
+
+        // Wait for the CSS transition to finish (0.3s) before navigating
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 300);
+      }
+    });
   });
+});
   

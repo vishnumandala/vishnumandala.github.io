@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="project-layout-container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+
+  <!-- Back Button -->
+  <a href="{{ site.baseurl }}/projects/" class="back-button wow animated slideInDown" data-wow-delay="0.1s" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: inherit; font-weight: 600;">
+      <i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back to Projects
+  </a>
+
+  <!-- Project Header Hero -->
+  <div class="project-hero" style="position: relative; overflow: hidden; border-radius: 15px; margin-bottom: 40px; background: rgba(40, 42, 54, 0.05);">
+    
+    <!-- Optional Blurred Backdrop -->
+    {% if page.image %}
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; filter: blur(40px); opacity: 0.3; background-image: url('{{ page.image }}'); background-size: cover; background-position: center;"></div>
+    {% endif %}
+
+    <div class="hero-content p-4 p-md-5 wow animated fadeIn" data-wow-delay="0.2s" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h1 class="display-4 font-weight-bold mb-3" style="word-break: break-word;">{{ page.name }}</h1>
+      
+      {% if page.description %}
+      <p class="lead text-muted mb-4" style="max-width: 800px;">{{ page.description }}</p>
+      {% endif %}
+
+      <div class="d-flex justify-content-center flex-wrap mb-4" style="gap: 8px;">
+        {% for tag in page.tools %}
+        <span class="badge badge-pill text-primary border border-primary px-3 py-2" style="font-size: 0.9rem;">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="d-flex justify-content-center" style="gap: 15px;">
+        {% if site.github_username and page.repo %}
+          <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}" class="btn btn-outline-dark rounded-pill shadow-sm d-flex align-items-center" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github" style="margin-right: 8px;"></i> View Source
+          </a>
+        {% elsif page.github_url %}
+          <a href="{{ page.github_url }}" class="btn btn-outline-dark rounded-pill shadow-sm d-flex align-items-center" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github" style="margin-right: 8px;"></i> View Repository
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image Display -->
+  {% if page.image %}
+  <div class="featured-image-container mb-5 text-center wow animated slideInUp" data-wow-delay="0.3s">
+    <img src="{{ page.image }}" alt="{{ page.name }}" class="img-fluid rounded shadow-lg" style="max-height: 600px; width: auto; object-fit: contain;">
+  </div>
+  {% endif %}
+
+  <!-- Main Markdown Content -->
+  <div class="project-content markdown-body wow animated fadeIn" data-wow-delay="0.4s" style="max-width: 900px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem;">
+    {{ content }}
+  </div>
+
+</div>
+
+<!-- Additional Inline CSS specifically for projects -->
+<style>
+  [data-theme="dark"] .project-hero { background: rgba(255, 255, 255, 0.02) !important; border: 1px solid rgba(255, 255, 255, 0.05); }
+  [data-theme="light"] .project-hero { background: rgba(0, 0, 0, 0.02) !important; border: 1px solid rgba(0, 0, 0, 0.05); }
+</style>
