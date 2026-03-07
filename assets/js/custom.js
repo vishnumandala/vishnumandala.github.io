@@ -175,6 +175,13 @@ function scrollToAbout() {
     // Set scroll arrow color
     setScrollArrowColor(descriptionText, scrollArrow);
   
+    // --- Markdown Content Scroll Animations ---
+    const projectContentElements = document.querySelectorAll('.project-content > p, .project-content > ul, .project-content > ol, .project-content > img, .project-content > h1, .project-content > h2, .project-content > h3');
+    projectContentElements.forEach((el, index) => {
+      el.classList.add('wow', 'animated', 'fadeInUp');
+      const delay = Math.min(index * 0.1, 0.8);
+      el.setAttribute('data-wow-delay', `${delay}s`);
+    });
 
   // --- Page Transitions ---
   // Intercept all internal links and apply the fade-out class before navigating

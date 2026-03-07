@@ -5,7 +5,7 @@ layout: default
 <div class="project-layout-container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
 
   <!-- Back Button -->
-  <a href="{{ site.baseurl }}/projects/" class="back-button wow animated slideInDown" data-wow-delay="0.1s" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: inherit; font-weight: 600;">
+  <a href="{{ site.baseurl }}/projects/" class="back-button wow animated slideInDown" data-wow-delay="0.1s" style="display: inline-block; margin-bottom: 20px; color: inherit; font-weight: 600;">
       <i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back to Projects
   </a>
 
@@ -65,9 +65,14 @@ layout: default
 
   /* Repo Button Theme Colors */
   [data-theme="dark"] .btn-repo { color: #fff; border-color: rgba(255,255,255,0.5); background-color: transparent; transition: all 0.3s ease; }
-  [data-theme="dark"] .btn-repo:hover { color: #000; background-color: #fff; border-color: #fff; }
+  [data-theme="dark"] .btn-repo:hover { color: #000 !important; background-color: #fff; border-color: #fff; }
+  [data-theme="dark"] .btn-repo:hover i { color: #000 !important; }
   [data-theme="light"] .btn-repo { color: #000; border-color: rgba(0,0,0,0.5); background-color: transparent; transition: all 0.3s ease; }
-  [data-theme="light"] .btn-repo:hover { color: #fff; background-color: #000; border-color: #000; }
+  [data-theme="light"] .btn-repo:hover { color: #fff !important; background-color: #000; border-color: #000; }
+  [data-theme="light"] .btn-repo:hover i { color: #fff !important; }
+
+  /* Back button hover */
+  .back-button:hover { text-decoration: underline !important; opacity: 0.8; }
 
   /* Markdown Content Typography */
   .project-content h1, .project-content h2, .project-content h3 { margin-top: 2.5rem; margin-bottom: 1.2rem; font-weight: 700; }

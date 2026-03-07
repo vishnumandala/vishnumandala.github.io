@@ -1095,3 +1095,76 @@ body.fade-out {
   }
 }
 
+/* ==========================================================================
+   Colorful Outline Social Buttons Hover Styles
+   ========================================================================== */
+
+/* Dark Mode Overrides for Outlines */
+@media (prefers-color-scheme: dark) {
+  [data-theme="dark"] .btn-outline-dark.resume { border-color: #B20000 !important; color: #B20000 !important; }
+  [data-theme="dark"] .btn-outline-dark.resume i { color: #B20000 !important; }
+  [data-theme="dark"] .btn-outline-dark.github { border-color: #888888 !important; color: #888888 !important; }
+  [data-theme="dark"] .btn-outline-dark.github i { color: #888888 !important; }
+  [data-theme="dark"] .btn-outline-dark.linkedin { border-color: #0077B5 !important; color: #0077B5 !important; }
+  [data-theme="dark"] .btn-outline-dark.linkedin i { color: #0077B5 !important; }
+}
+
+[data-theme="dark"] .btn-outline-dark.resume { border-color: #B20000 !important; color: #B20000 !important; }
+[data-theme="dark"] .btn-outline-dark.resume i { color: #B20000 !important; }
+[data-theme="dark"] .btn-outline-dark.resume:hover { background-color: transparent !important; color: white !important; border-color: #B20000 !important; }
+
+[data-theme="dark"] .btn-outline-dark.github { border-color: #888888 !important; color: #888888 !important; }
+[data-theme="dark"] .btn-outline-dark.github i { color: #888888 !important; }
+[data-theme="dark"] .btn-outline-dark.github:hover { background-color: transparent !important; color: white !important; border-color: #888888 !important; }
+
+[data-theme="dark"] .btn-outline-dark.linkedin { border-color: #0077B5 !important; color: #0077B5 !important; }
+[data-theme="dark"] .btn-outline-dark.linkedin i { color: #0077B5 !important; }
+[data-theme="dark"] .btn-outline-dark.linkedin:hover { background-color: transparent !important; color: white !important; border-color: #0077B5 !important; }
+
+
+.btn-outline-dark.resume,
+.btn-outline-dark.github,
+.btn-outline-dark.linkedin {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-outline-dark.resume::before,
+.btn-outline-dark.github::before,
+.btn-outline-dark.linkedin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Resume Gradient */
+.btn-outline-dark.resume { border-color: #b20000; color: #b20000; }
+.btn-outline-dark.resume i { color: #B20000; }
+.btn-outline-dark.resume::before { background: linear-gradient(to right, #b20000, #ff0000); }
+.btn-outline-dark.resume:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(178, 0, 0, 0.3); color: white !important; border-color: transparent; }
+.btn-outline-dark.resume:hover i { color: white !important; }
+.btn-outline-dark.resume:hover::before { transform: scaleX(1); }
+
+/* GitHub Gradient */
+.btn-outline-dark.github { border-color: #888888; color: #888888; }
+.btn-outline-dark.github i { color: #888888; }
+.btn-outline-dark.github::before { background: linear-gradient(to right, #888, #333); }
+.btn-outline-dark.github:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(136, 136, 136, 0.3); color: white !important; border-color: transparent; }
+.btn-outline-dark.github:hover i { color: white !important; }
+.btn-outline-dark.github:hover::before { transform: scaleX(1); }
+
+/* LinkedIn Gradient */
+.btn-outline-dark.linkedin { border-color: #0077B5; color: #0077B5; }
+.btn-outline-dark.linkedin i { color: #0077B5; }
+.btn-outline-dark.linkedin::before { background: linear-gradient(to right, #005582, #0077B5, #00A8FF); }
+.btn-outline-dark.linkedin:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3); color: white !important; border-color: transparent; }
+.btn-outline-dark.linkedin:hover i { color: white !important; }
+.btn-outline-dark.linkedin:hover::before { transform: scaleX(1); }
