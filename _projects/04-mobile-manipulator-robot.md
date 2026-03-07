@@ -3,47 +3,10 @@ name: Mobile Manipulator Robot Design & Control
 tools: [ROS2, MATLAB, SolidWorks, UR10, LIDAR, URDF, Kinematics, Dynamics]
 image: https://raw.githubusercontent.com/vishnumandala/Mobile-Manipulator-Robot-Design-and-Simulation-Project/main/results/demo.gif
 description: 6-DOF mobile manipulator with optimized chassis design and steerable L-joints, achieving 98% pick-and-place accuracy using ROS2-based navigation.
+github_url: https://github.com/vishnumandala/Mobile-Manipulator-Robot-Design-and-Simulation-Project
 ---
 
-<a href="{{ site.baseurl }}/projects/" class="back-button" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: inherit;">
-    <i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back to Projects
-</a>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-    <h1 style="margin: 0;"><strong>Mobile Manipulator Robot Design & Control</strong></h1>
-    <a href="https://github.com/vishnumandala/Mobile-Manipulator-Robot-Design-and-Simulation-Project" 
-        class="github-link"
-       style="text-decoration: none; background-color: #f5f5f5; padding: 10px 15px; border-radius: 8px; transition: all 0.3s ease;">
-        <i class="fab fa-github fa-2x" style="color: #333333; transition: color 0.3s ease;"></i>
-        <style>
-            a:hover {
-                background-color: #333333 !important;
-            }
-            .github-link:hover i {
-                color: #ffffff !important;
-            }
-            .back-button:hover {
-                background-color: transparent !important;
-            }
-        </style>
-    </a>
-</div>
-
-<p class="post-metadata text-muted">
-   <span class="d-inline-block">December 10, 2023</span> &#8226; 
-   <span class="tags">
-      {% for tag in page.tools %}
-      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
-      {% endfor %}
-    </span>
-</p>
-
-<div style="text-align: center; margin: 30px 0;">
-    <img src="https://raw.githubusercontent.com/vishnumandala/Mobile-Manipulator-Robot-Design-and-Simulation-Project/main/results/demo.gif" 
-         alt="Mobile Manipulator Demo"
-         style="width: 90%; max-width: 1200px; margin: auto;"
-    />
-</div>
 
 ## Project Overview
 This project focuses on the design, modeling, and simulation of an advanced robotic system that integrates a UR10 manipulator with a four-wheeled mobile chassis. The primary goal is to create a system capable of picking and handling tools from a moving conveyor belt. Although the original vision was for full autonomous operation, limitations in vision integration have led to a design based on direct commands and teleoperation.

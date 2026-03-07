@@ -26,17 +26,17 @@ layout: default
 
       <div class="d-flex justify-content-center flex-wrap mb-4" style="gap: 8px;">
         {% for tag in page.tools %}
-        <span class="badge badge-pill text-primary border border-primary px-3 py-2" style="font-size: 0.9rem;">{{ tag }}</span>
+        <span class="badge badge-pill text-primary border border-primary px-3 py-2" style="font-size: 0.9rem; cursor: default; user-select: none;">{{ tag }}</span>
         {% endfor %}
       </div>
 
       <div class="d-flex justify-content-center" style="gap: 15px;">
         {% if site.github_username and page.repo %}
-          <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}" class="btn btn-outline-dark rounded-pill shadow-sm d-flex align-items-center" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}" class="btn btn-repo rounded-pill shadow-sm d-flex align-items-center" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github" style="margin-right: 8px;"></i> View Source
           </a>
         {% elsif page.github_url %}
-          <a href="{{ page.github_url }}" class="btn btn-outline-dark rounded-pill shadow-sm d-flex align-items-center" target="_blank" rel="noopener noreferrer">
+          <a href="{{ page.github_url }}" class="btn btn-repo rounded-pill shadow-sm d-flex align-items-center" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github" style="margin-right: 8px;"></i> View Repository
           </a>
         {% endif %}
@@ -47,7 +47,7 @@ layout: default
   <!-- Featured Image Display -->
   {% if page.image %}
   <div class="featured-image-container mb-5 text-center wow animated slideInUp" data-wow-delay="0.3s">
-    <img src="{{ page.image }}" alt="{{ page.name }}" class="img-fluid rounded shadow-lg" style="max-height: 600px; width: auto; object-fit: contain;">
+    <img src="{{ page.image }}" alt="{{ page.name }}" class="img-fluid rounded shadow-lg" style="width: 100%; max-width: 1000px; margin: 0 auto; display: block; object-fit: cover;">
   </div>
   {% endif %}
 
@@ -62,4 +62,17 @@ layout: default
 <style>
   [data-theme="dark"] .project-hero { background: rgba(255, 255, 255, 0.02) !important; border: 1px solid rgba(255, 255, 255, 0.05); }
   [data-theme="light"] .project-hero { background: rgba(0, 0, 0, 0.02) !important; border: 1px solid rgba(0, 0, 0, 0.05); }
+
+  /* Repo Button Theme Colors */
+  [data-theme="dark"] .btn-repo { color: #fff; border-color: rgba(255,255,255,0.5); background-color: transparent; transition: all 0.3s ease; }
+  [data-theme="dark"] .btn-repo:hover { color: #000; background-color: #fff; border-color: #fff; }
+  [data-theme="light"] .btn-repo { color: #000; border-color: rgba(0,0,0,0.5); background-color: transparent; transition: all 0.3s ease; }
+  [data-theme="light"] .btn-repo:hover { color: #fff; background-color: #000; border-color: #000; }
+
+  /* Markdown Content Typography */
+  .project-content h1, .project-content h2, .project-content h3 { margin-top: 2.5rem; margin-bottom: 1.2rem; font-weight: 700; }
+  .project-content p { margin-bottom: 1.5rem; font-size: 1.15rem; line-height: 1.8; opacity: 0.9; }
+  .project-content img { width: 100%; max-width: 1000px; margin: 2rem auto; display: block; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+  .project-content ul, .project-content ol { margin-bottom: 1.5rem; font-size: 1.15rem; padding-left: 1.5rem; opacity: 0.9; }
+  .project-content li { margin-bottom: 0.5rem; }
 </style>
